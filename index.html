@@ -43,7 +43,6 @@
       max-width: 420px;
       width: 100%;
       height: auto;
-      display: inline-block;
     }
 
     .accroche {
@@ -93,6 +92,35 @@
     .bloc p,
     .intro p {
       margin: 10px 0;
+    }
+
+    .intro-link {
+      margin-top: 18px;
+    }
+
+    .intro-link a,
+    .contact-item a {
+      color: var(--bleu);
+      text-decoration: none;
+    }
+
+    .intro-link a:hover,
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
 
     .slideshow {
@@ -185,15 +213,44 @@
       <p><strong>Bienvenue sur la page d’information du GEM La Canne de l’Ouïe.</strong></p>
       <p>Notre site internet complet est actuellement en préparation.</p>
       <p>Vous trouverez ici nos coordonnées ainsi que l’agenda des activités à venir.</p>
+
+      <p class="intro-link">
+        <a href="plaquette.pdf" target="_blank"><strong>→ Consulter la plaquette de présentation</strong></a>
+      </p>
     </section>
 
     <section class="bloc-double">
+
       <div class="bloc">
         <h2>Contacts</h2>
-        <p><strong>Coordinatrice et animatrice :</strong> Clémence MODRI</p>
-        <p><strong>Adresse :</strong> 13 Boulevard Jean Lacoste - 40000 Mont-de-Marsan</p>
-        <p><strong>Téléphone :</strong> 06 89 16 72 76</p>
-        <p><strong>E-mail :</strong> gem.lacannedelouie@gmail.com</p>
+
+        <p><strong>Coordinatrice-Animatrice :</strong> Clémence Modri</p>
+
+        <div class="contact-item">
+          <img src="icon-adresse.png" class="icon" alt="Icône adresse">
+          <span>13 Boulevard Jean Lacoste - 40000 Mont-de-Marsan</span>
+        </div>
+
+        <div class="contact-item">
+          <img src="icon-telephone.png" class="icon" alt="Icône téléphone">
+          <span><a href="tel:0689167276">06 89 16 72 76</a></span>
+        </div>
+
+        <div class="contact-item">
+          <img src="icon-mail.png" class="icon" alt="Icône mail">
+          <span><a href="mailto:gem.lacannedelouie@gmail.com">gem.lacannedelouie@gmail.com</a></span>
+        </div>
+
+        <div class="contact-item">
+          <img src="icon-site.png" class="icon" alt="Icône site internet">
+          <span><a href="https://www.lacannedelouie.fr" target="_blank">www.lacannedelouie.fr</a></span>
+        </div>
+
+        <div class="contact-item">
+          <img src="icon-reseau.png" class="icon" alt="Icône réseau social">
+          <span>GEM La Canne de l’Ouïe</span>
+        </div>
+
       </div>
 
       <div class="bloc">
@@ -206,6 +263,7 @@
           <img class="slide" src="photo6.jpg" alt="">
         </div>
       </div>
+
     </section>
 
     <section class="agenda">
